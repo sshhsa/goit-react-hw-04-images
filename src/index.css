@@ -1,4 +1,23 @@
-@import-normalize; /* bring in normalize.css styles */
+:root {
+  --light-clr-1: #fffee1;
+  --light-clr-2: #f1ed9e;
+
+  --dark-clr-1: rgba(0, 0, 0, 0.5);
+  --dark-clr-2: #262626;
+
+  --accent-clr-1: #333197;
+  --accent-clr-2: #fded5f;
+
+  --default-animation: 400ms ease-in-out;
+  --default-bor-rad: 6px;
+}
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   margin: 0;
@@ -7,9 +26,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  color: var(--dark-clr-1);
+  background-color: var(--light-clr-1);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+ul,
+ol {
+  list-style-type: none;
 }

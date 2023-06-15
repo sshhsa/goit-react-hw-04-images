@@ -1,0 +1,29 @@
+.buttonLoadMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+
+    padding: 10px 20px;
+
+    border: none;
+    outline: none;
+    border-radius: var(--default-bor-rad);
+    cursor: pointer;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    color: var(--light-clr-1);
+    background-color: var(--accent-clr-1);
+
+    transition: background-color var(--default-animation);
+}
+
+.buttonLoadMore:hover,
+.buttonLoadMore:focus {
+    background-color: #201f6b;
+}

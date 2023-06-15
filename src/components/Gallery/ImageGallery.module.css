@@ -1,0 +1,46 @@
+:root {
+    --default-margin: 25px;
+}
+
+.galleryList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+
+    gap: var(--default-margin);
+    margin: var(--default-margin) 0px;
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 1200px;
+}
+
+.imageGalleryItem {
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: var(--default-animation);
+}
+
+.imageGalleryItem:hover,
+.imageGalleryItem:focus {
+    transform: scale(1.05);
+}
+
+.imageItem {
+    width: 350px;
+    height: 200px;
+}
+
+.imageModal {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 400px) {
+    .imageItem {
+        width: 300px;
+        height: 150px;
+    }
+}

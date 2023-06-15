@@ -1,0 +1,15 @@
+.messageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 400px;
+    padding: 10px 20px;
+}
+
+.message {
+    font-size: 40;
+    font-weight: 500;
+
+    color: var(--accent-clr-1);
+}
